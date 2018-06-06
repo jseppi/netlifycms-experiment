@@ -1,0 +1,10 @@
+node_modules
+*.log
+cache
+_site*
+_batfish_site
+_batfish_tmp
+legacy/.git
+coverage
+.eslintcache
+.DS_Store

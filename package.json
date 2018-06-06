@@ -1,0 +1,19 @@
+{
+  "name": "netlifycms-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "batfish start",
+    "build": "batfish build",
+    "serve-static": "batfish serve-static"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@mapbox/batfish": "^1.9.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-helmet": "^5.2.0"
+  }
+}
