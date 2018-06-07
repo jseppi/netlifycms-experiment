@@ -18,5 +18,5 @@ description: >-
 {{ props.frontMatter.description }}
 
 {{
-  <img src={props.frontMatter.featuredImage} alt="boop" />
+  <img width="600" src={props.frontMatter.featuredImage} alt="boop" />
 }}
