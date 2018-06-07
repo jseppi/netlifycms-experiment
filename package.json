@@ -6,14 +6,14 @@
   "scripts": {
     "start": "batfish start",
     "build": "batfish build",
-    "serve-static": "batfish serve-static"
+    "serve-static": "batfish serve-static",
+    "flow": "flow"
   },
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
     "@mapbox/batfish": "^1.9.1",
     "flow-bin": "^0.73.0",
-    "netlify-cms": "^1.8.4",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-helmet": "^5.2.0",
