@@ -1,6 +1,6 @@
 ---
-title: Consumer Test Edit
-heroText: Build beautiful experiences and drive engagement
+title: Consumer
+heroText: Build beautiful experiences and drive engagement - test edit
 featuredImage: /static/industry-consumer-c.jpeg
 description: >-
   Connect the physical world with the digital world through immersive augmented
