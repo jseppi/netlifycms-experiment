@@ -1,0 +1,13 @@
+# https://focused-minsky-b08e8a.netlify.com/
+
+backend:
+  name: github
+  repo: jseppi/netlifycms-experiment
+
+media_folder: "src/pages/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Post"
+    folder: "src/pages/posts"

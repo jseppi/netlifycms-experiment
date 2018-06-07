@@ -12,8 +12,11 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@mapbox/batfish": "^1.9.1",
+    "flow-bin": "^0.73.0",
+    "netlify-cms": "^1.8.4",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "slate": "^0.33.6"
   }
 }
