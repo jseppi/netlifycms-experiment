@@ -13,7 +13,7 @@ export default () => (
         href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css"
         rel="stylesheet"
       />
-      <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
     </Helmet>
+    <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
   </div>
 );
