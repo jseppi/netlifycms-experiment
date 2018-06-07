@@ -14,7 +14,6 @@
 ._batfish_*
 
 [include]
-./src/**/*.js
 
 [libs]
 
