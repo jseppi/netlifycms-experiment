@@ -12,21 +12,17 @@ media_folder: "src/pages/static"
 public_folder: "/static"
 
 collections:
-  # Single pages can be configured like this:
-  # - label: "Pages"
-  #   name: "pages"
-  #   files:
-  #     - label: "Consumer Industry Page"
-  #       name: "consumer"
-  #       file: "src/pages/industries/consumer.md"
-  #       fields:
-  #         - {label: "Title", name: "title", widget: "string"}
-  #         - {label: "Hero Text", name: "heroText", widget: "string"}
-  #         - {label: "Featured Image", name: "featuredImage", widget: "image"}
-  #         - {label: "Description", name: "description", widget: "markdown"}
-  #         - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Index Page"
+        name: "index"
+        file: "src/pages/index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - name: "industries"
-    label: "Industry Pages"
+    label: "Industry Page"
     folder: "src/pages/industries"
     create: true
     fields:
