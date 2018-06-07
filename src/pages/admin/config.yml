@@ -1,5 +1,9 @@
 # https://focused-minsky-b08e8a.netlify.com/
 
+# Notes
+#  - Doesn't know how to handle .js content files, but that could
+#    probably be written. In the meantime, jsxtreme-markdown might get us to where we need
+
 backend:
   name: github
   repo: jseppi/netlifycms-experiment
@@ -13,17 +17,17 @@ collections:
     files:
       - label: "Consumer Industry Page"
         name: "consumer"
-        file: "src/pages/industries/consumer.js"
+        file: "src/pages/industries/consumer.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Hero Text", name: "heroText", widget: "string"}
           - {label: "Featured Image", name: "featuredImage", widget: "image"}
           - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown"}
   # - name: "industries"
   #   label: "Industry Pages"
   #   folder: "src/pages/industries"
   #   create: true
-  #   # slug: "{{slug}}.js"
   #   fields:
   #     - {label: "Title", name: "title", widget: "string"}
   #     - {label: "Hero Text", name: "heroText", widget: "string"}
