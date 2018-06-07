@@ -4,10 +4,17 @@ backend:
   name: github
   repo: jseppi/netlifycms-experiment
 
-media_folder: "src/pages/uploads"
-public_folder: "/uploads"
+media_folder: "src/pages/static"
+public_folder: "/static"
 
 collections:
-  - name: "posts"
-    label: "Post"
-    folder: "src/pages/posts"
+  - name: "industries"
+    label: "Industry Pages"
+    folder: "src/pages/industries"
+    create: false
+    slug: "{{slug}}.js"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Hero Text", name: "heroText", widget: "string"}
+      - {label: "Featured Image", name: "featuredImage", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}
