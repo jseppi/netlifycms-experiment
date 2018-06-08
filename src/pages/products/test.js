@@ -1,4 +1,6 @@
+/*
 ---
 title: test
 ---
-test test
+*/
+test body
