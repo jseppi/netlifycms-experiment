@@ -2,20 +2,23 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-// TODO: couldn't get npm version to work with batfish
-// ("window not defined" error during `npm run build`), 
-// so used the unpkg-hosted version instead
-// Might be able to use the "Manual Configuration" method
-// outlined at https://www.netlifycms.org/docs/beta-features/
+export default class Admin extends React.Component<*> {
+  componentDidMount() {
+    if (window) {
+      window.CMS_MANUAL_INIT = true
+      // dynamic require so that batfish build would work
+      const CMS = require('netlify-cms');
+      CMS.init();
+    }
+  }
 
-export default () => (
-  <div>
-    <Helmet>
-      <link
-        href="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.css"
-        rel="stylesheet"
-      />
-    </Helmet>
-    <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
-  </div>
-);
+  render() {
+    return (
+      <div>
+        <Helmet>
+          <link href="/static/cms.css" rel="stylesheet" />
+        </Helmet>
+      </div>
+    )
+  }
+}
