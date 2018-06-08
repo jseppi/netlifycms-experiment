@@ -14,8 +14,8 @@ public_folder: "/static"
 publish_mode: editorial_workflow
 
 collections:
-  - label: "Individual Pages"
-    name: "pages"
+  - name: "pages"
+    label: "Individual Pages"
     files:
       - label: "Index Page"
         name: "index"
@@ -23,6 +23,18 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+  - name: "products"
+    label: "Product Page"
+    folder: "src/pages/products"
+    create: true
+    extension: js
+    format: yaml-frontmatter
+    frontmatter_delimiter:
+      - "/*---"
+      - "---*/"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "text"}
   - name: "industries"
     label: "Industry Page"
     folder: "src/pages/industries"
