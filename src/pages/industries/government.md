@@ -1,5 +1,5 @@
 ---
-title: Government - edit
+title: Government
 heroText: >-
   Build better tools for citizens with open data on your own private
   infrastructure
