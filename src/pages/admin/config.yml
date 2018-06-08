@@ -11,8 +11,10 @@ backend:
 media_folder: "src/pages/static"
 public_folder: "/static"
 
+publish_mode: editorial_workflow
+
 collections:
-  - label: "Pages"
+  - label: "Individual Pages"
     name: "pages"
     files:
       - label: "Index Page"

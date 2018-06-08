@@ -7,6 +7,7 @@ export default class Admin extends React.Component<*> {
     if (window) {
       window.CMS_MANUAL_INIT = true
       // dynamic require so that batfish build would work
+      // (b/c netlify-cms relies on `window` being present)
       const CMS = require('netlify-cms');
       CMS.init();
     }
