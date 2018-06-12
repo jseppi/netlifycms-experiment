@@ -34,7 +34,7 @@ collections:
       - "---*/"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "text"} # TODO: would want to make a code editor widget for this
   - name: "industries"
     label: "Industry Page"
     folder: "src/pages/industries"

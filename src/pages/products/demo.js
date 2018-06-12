@@ -2,6 +2,7 @@
 title: Demo Product
 subTitle: The demoiest product of them all.
 ---*/
+import React from 'react';
 
 export default class ProductDemo extends React.Component {
   render() {
