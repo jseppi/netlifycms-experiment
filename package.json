@@ -18,6 +18,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-helmet": "^5.2.0",
-    "slate": "^0.33.6"
+    "react-syntax-highlighter": "^7.0.4",
+    "slate": "^0.33.7"
   }
 }

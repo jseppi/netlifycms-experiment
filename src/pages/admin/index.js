@@ -1,6 +1,7 @@
 /* @flow */
 import React from 'react';
 import Helmet from 'react-helmet';
+import CodeHighlightPreview from '../../components/codeHighlightPreview';
 
 export default class Admin extends React.Component<*> {
   componentDidMount() {
@@ -10,6 +11,8 @@ export default class Admin extends React.Component<*> {
       // (b/c netlify-cms relies on `window` being present)
       const CMS = require('netlify-cms');
       CMS.init();
+      CMS.default.registerPreviewTemplate("industries", CodeHighlightPreview);
+      CMS.default.registerPreviewTemplate("products", CodeHighlightPreview);
     }
   }
 
