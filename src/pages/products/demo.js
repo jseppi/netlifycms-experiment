@@ -1,6 +1,5 @@
 /*---
-title: Demo Product
-subTitle: The demoiest product of them all.
+title: Demo Product Test
 ---*/
 import React from 'react';
 
