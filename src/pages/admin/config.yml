@@ -1,9 +1,5 @@
 # https://focused-minsky-b08e8a.netlify.com/
 
-# Notes
-#  - Doesn't know how to handle .js content files, but that could
-#    probably be written. In the meantime, jsxtreme-markdown might get us to where we need
-
 backend:
   name: github
   repo: jseppi/netlifycms-experiment
@@ -23,6 +19,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "products"
     label: "Product Page"
     folder: "src/pages/products"
@@ -34,11 +31,14 @@ collections:
       - "---*/"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"} # TODO: would want to make a code editor widget for this
+      - {label: "Sub Title", name: "subTitle", widget: "string"}
+      - {label: "Body", name: "body", widget: "text"}
+
   - name: "industries"
     label: "Industry Page"
     folder: "src/pages/industries"
     create: true
+    # extension: md  # these are jsxtreme-markdown files
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Hero Text", name: "heroText", widget: "string"}
